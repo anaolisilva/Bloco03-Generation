@@ -10,23 +10,23 @@ body {
 }
 
 /* Definições do menu */
-#menu {
+.menu {
     background-color: rgb(68, 68, 68);
     padding-top: 5px;
 }
 
-#menu ul{
+.menu ul{
     background-color: rgb(68, 68, 68);
 }
 
-#menu li {
+.menu li {
     display: inline;
     padding: 15px;
     margin-top: 16px;   
     transition: 0.5s; 
 }
 
-#menu a {
+.menu a {
     text-decoration: none;
     background-color: rgb(68, 68, 68);
     border-radius: 10px;
@@ -35,13 +35,13 @@ body {
     transition: 0.3s;
 }
 
-#menu li a:hover {
+.menu li a:hover {
     color: rgb(34, 34, 34);
     background-color: rgb(74, 192, 247);
 }
 
 /* Definições do main (onde fica o texto de fato) */
-#main {
+.main {
     background: rgba(39, 39, 39, 0.95); /* primeira cor do gradiente */
     background: linear-gradient(0deg, rgb(34, 34, 34, 0.95) 0%, rgb(41, 41, 41, 0.95) 70%, rgb(134, 134, 134, 0.95) 100%);
     margin: 0 10% 1% 10%;
@@ -84,10 +84,6 @@ a:hover{
     color:rgb(65, 169, 218);
 }
 
-footer {
-    color: rgb(173, 173, 173);
-}
-
 hr {
     border-color: rgb(173, 173, 173);
     color: rgb(173, 173, 173)
@@ -95,6 +91,10 @@ hr {
 
 span {
     font-weight: bold;
+}
+
+footer {
+    color: rgb(173, 173, 173);
 }
 
 .imagem {
