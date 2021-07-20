@@ -1,0 +1,220 @@
+/* Definições gerais do corpo */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkgrey;
+    /* background: linear-gradient(0deg, rgb(34, 34, 34) 0%, rgb(41, 41, 41) 70%, rgb(134, 134, 134) 100%); */
+    background: url("/assets/img/fundo2.png") 
+    -15% 15% / 4% auto repeat fixed padding-box 
+    border-box rgb(39, 39, 39);
+    margin: 0;
+    text-align: justify;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none; /* tirando o sublinhado do link */
+    transition: 0.3s;
+}
+a:hover{
+    color:rgb(65, 169, 218);
+}
+
+ul { /* Possível colocar mais de um seletor de uma vez*/
+    font-size: 1.125rem;
+    align-items: right;
+}
+/* rem é uma unidade de medida meio padrão da fonte, sendo que 1rem é 16px  (pelo menos no desktop) */
+
+hr {
+    border-color: rgb(173, 173, 173);
+    color: rgb(173, 173, 173)
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Definições do menu */
+.menu {
+    background-color: rgb(68, 68, 68);
+    padding-top: 5px;
+}
+
+.menu ul{
+    background-color: rgb(68, 68, 68);
+}
+
+.menu li {
+    display: inline;
+    padding: 15px;
+    margin-top: 16px;   
+    transition: 0.5s; 
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color:rgb(74, 192, 247);
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: rgb(34, 34, 34);
+    background-color: rgb(74, 192, 247);
+}
+
+/* Definições: layout geral (barra lateral x conteúdo principal) */
+.conteudo-total {
+    display:flex;
+    width: 100%;
+    height: auto;
+}
+
+/* Definições da barra lateral */
+.barra-lateral {
+    min-width: 15%;
+    max-width: 15%;
+    height: 25%;
+    background-color: rgb(39, 39, 39);
+    border: 3px solid black;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 2.5% 10% 5%;
+    padding: 2%;
+}
+.img-perfil {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+.img-perfil:hover{
+    -moz-box-shadow: 0 0 20px #fff;
+    -webkit-box-shadow: 0 0 20px #fff;
+    box-shadow: 0px 0px 20px #fff;
+}
+
+.descricao {
+    font-size: 1.15rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.contato {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.contato h5{
+    font-size: 1.15rem;
+    padding: 1px;
+    margin: 3px;
+}
+.contato > div {
+    padding: 9px;
+    object-fit: fill;
+    
+}
+
+/* Definições do main (onde fica o texto de fato) */
+.main {
+    background: rgba(39, 39, 39, 0.95); /* primeira cor do gradiente */
+    background: linear-gradient(0deg, rgb(34, 34, 34, 0.95) 0%, rgb(41, 41, 41, 0.95) 70%, rgb(134, 134, 134, 0.95) 100%);
+    margin: 0 6% 1% 6%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5%;
+    height: 100%;
+    width: auto;
+    font-size: 1.2rem;
+}
+
+/* Boas práticas: colocar comentários indicando o que é cada coisa. Atalho: ctrl + ;*/
+/* Títulos */
+h1 {
+    color: #d1155d; 
+    text-align: center;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000;
+    transition: 0.5s ease-out;
+}
+h1:hover{
+    color:rgb(65, 169, 218);
+}
+
+h4 {
+    font-size: large;
+    font-weight: normal;
+}
+
+
+
+footer {
+    color: rgb(173, 173, 173);
+}
+
+.imagem {
+    transition: 0.4s ease-out;
+}
+
+.imagem:hover{
+    border-radius: 200px;
+}
+
+.borda {
+    padding: 0.5%;
+    border: 2px solid #fff;
+}
+
+.flex-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-container > div {
+    padding-bottom: 20px;
+}
+
+.videos {
+    flex-flow: row wrap;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+}
+
+.bloco > div {
+    flex-flow: row wrap;
+    margin: 0 30px;
+    
+}
+
+/* Configuração do rodapé */
+.rodape01 {
+    background-color: rgba(255, 255, 255, 0.904);
+    color:black;
+    padding: 0.8%;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.rodape02 {
+    background-color: rgba(255, 255, 255, 0.904);
+    color:black;
+    padding: 0% 0.8% 0.8% 0.8%;
+    display: flex;
+    margin: 0;
+    flex-flow: column;
+}
+.rodape02 > hr {
+    margin-bottom: 1px;
+}
+
+
+
