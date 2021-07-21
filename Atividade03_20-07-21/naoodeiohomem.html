@@ -48,20 +48,32 @@
             <div class="descricao">
                 <p>ANArquia. Feminista convicta. Resolvedora de perrengues. Escreve em muitas lingua(gen)s: português, inglês, Java, Python e C.</p>
             </div>
+            <div class="social">
+                <div class="icone">
+                    <a href = "https://www.linkedin.com/in/anaolisilva/" target="_blank">
+                        <img src="assets/img/linkedin.png" alt="Link para o LinkedIn da autora">
+                     </a>
+                </div>
+                <div class="icone">
+                    <a href="https://github.com/anaolisilva" target="_blank"><img src="/assets/img/github.png" alt="Link para o GitHub da autora"></a>                
+                </div>
+            </div>
             <div class="contato">
                 <div>
                     <h5>Contato</h5>
                 </div>
                 <div>
                     <label for="email">Seu e-mail:</label> <br>
-                    <input type="email" id="email">
+                    <input id="email" type="email" placeholder="seuemail@email.com" onkeyup="validaEmail()">
+                    <div id="txtEmail"> </div>
                 </div>
                 <div>
                     <label for="mensagem">Mensagem:</label><br>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+                    <textarea id="mensagem" cols="30" rows="5" placeholder="Escreva sua mensagem aqui."></textarea>
+                    <div id="txtMsg"> </div>
                 </div>
                 <div>
-                    <button>Enviar</button>
+                    <button onclick="enviaMensagem()">Enviar</button>
                 </div>
             </div>
         </div>

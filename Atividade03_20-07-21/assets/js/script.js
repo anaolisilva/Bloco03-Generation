@@ -7,6 +7,8 @@
 
 let email = document.querySelector('#email')
 let mensagem = document.querySelector('#mensagem')
+let emailOk = false
+let msgOk = false
 
 email.style.width = '100%'
 mensagem.style.width = '100%'
@@ -24,9 +26,11 @@ function validaEmail() {
     if (!email_valido) {
         txtEmail.innerHTML = 'E-mail inválido'
         txtEmail.style.color = 'red'
+        emailOk = false
     } else {
         txtEmail.innerHTML = ''
         email.style.border = 'solid #31c438'
+        emailOk = true
     }
 }
 
@@ -36,12 +40,23 @@ mensagem.addEventListener('keyup', () => {
     if (mensagem.value.length < 5) {
         txtMsg.innerHTML = 'Mensagem muito curta!'
         txtMsg.style.color = 'red'
+        msgOk = false
 
     } else {
         txtMsg.innerHTML = ''
         mensagem.style.border = 'solid #31c438'
+        msgOk = true
 
     }
 
 })
+
+function enviaMensagem () {
+    if(emailOk == true && msgOk == true) {
+        alert ('Mensagem enviada. Obrigada pelo contato.')
+    } else {
+        alert ('Preencha os campos corretamente antes de enviar a mensagem.')
+    }
+
+}
 

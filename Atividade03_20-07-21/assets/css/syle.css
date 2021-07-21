@@ -104,6 +104,28 @@ span {
     text-align: center;
 }
 
+  
+.social {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 3% 0;
+    height: 10%;
+    max-width: auto;
+    justify-content:space-around;
+    align-items: center;
+}
+.icone {
+    justify-content: center;
+    align-items: center;
+}
+
+.icone img {
+    width: 35%;
+    height: auto;
+    margin: 0 35%;
+    align-self: center;
+}
+
 .contato {
     display: flex;
     flex-flow: column;
