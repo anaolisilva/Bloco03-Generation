@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+</head>
+<style>
+    .fundo {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        background: linear-gradient(50deg, #78d2fc, #92f5df98, #96ff8c);
+        background-size: 300% 300%;
+        animation: colors 13s infinite;
+        overflow-x: hidden;
+        height: 100vh;
+        /* viewheight - ocupa 100% da altura do meu dispositivo   */
+    }
+
+    @keyframes colors {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .cover {
+        object-fit: cover !important;
+    }
+</style>
+
+<body>
+
+    <div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a style="font-size: 3rem;" class="navbar-brand px-3" href="/index.html">Dona</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active px-3">
+                      <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link" href="/sobre.html">Sobre o Dona</a>
+                    </li>
+                    <li class="nav-item dropdown px-3">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorias
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Cosméticos</a>
+                        <a class="dropdown-item" href="#">Alimentos e doces</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Serviços</a>
+                      </div>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </nav>
+        </div>
+
+    </div>
+
+    <div class="fundo d-flex align-items-center">
+        <div class="col p-5 m-5">
+            <p class="text-justify" style="font-size: 1.125rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci fuga praesentium, repudiandae ex odit veniam corrupti animi aut vero error quisquam, eos assumenda perspiciatis, ipsa harum? Hic magnam dolorem aspernatur. Autem, tempore voluptates. Maiores, veritatis. Nisi et animi culpa minus eum inventore sed ea repellat in consequuntur placeat soluta enim alias totam temporibus earum omnis atque hic, vitae repellendus dolor! Commodi error placeat eos rerum molestiae quo debitis voluptatem illum excepturi ad assumenda sunt quod nostrum nisi laudantium dolore libero cum itaque mollitia consectetur, architecto nulla dolor doloremque aut. Quae debitis veritatis mollitia labore adipisci voluptate doloremque. Soluta hic quisquam reiciendis illum? Enim consequuntur ducimus, beatae saepe earum soluta possimus cum nisi, animi suscipit porro voluptates qui repudiandae pariatur ad dignissimos quo vero maiores officia vitae? Animi cupiditate numquam illum accusantium laudantium, doloremque nulla, officia iure, eaque veritatis aut praesentium delectus aliquam explicabo expedita tempora laboriosam eos corporis illo!</p>
+        </div>
+
+        <div class="col">
+            <img class ="img-fluid cover pd-3" src="/assets/img/fotosobre01.png">
+            <small class="text-right">Photo by <a
+                    href="https://unsplash.com/@jmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joel
+                    Muniz</a> on <a
+                    href="https://unsplash.com/s/photos/women-diverse?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </small>
+        </div>
+    </div>
+
+
+
+
+    <!-- Importação de itens necessários ao Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

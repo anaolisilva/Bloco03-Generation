@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+</head>
+<style>
+    .body {
+        margin: 0 0 !important;
+    }
+
+    .fundo {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        background: linear-gradient(50deg, #78d2fc, #92f5df98, #96ff8c);
+        background-size: 300% 300%;
+        animation: colors 13s infinite;
+        overflow-x: hidden;
+        height: 80vh;
+        /* viewheight - ocupa 80% da altura do meu dispositivo   */
+    }
+
+    @keyframes colors {
+
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .cover {
+        object-fit: cover !important;
+    }
+
+    h1 {
+        font-size: 9rem !important;
+    }
+
+    .subtitulo {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: azure;
+        font-size: 3rem;
+    }
+</style>
+
+<body>
+    <!-- background size e overflow:hidden propriedade: stretch -->
+    <header class="d-flex m-0">
+        <div class="row flex-nowrap align-items-end">
+            <div id="logo" class="col-3 m-0">
+                <h1>Dona</h1>
+            </div>
+            <div class="col p-0 m-0 h-auto">
+                <img class="img-fluid cover" src="./assets/img/cabecalho01.png">
+            </div>
+        </div>
+    </header>
+    <div class="d-flex fundo">
+        <div class="row flex-l-wrap p-5">
+            <p class="col-7 subtitulo align-self-end">Mulheres com pequenos</p>
+            <p class="col-7 subtitulo text-right">negócios mudam o mundo</p>
+            
+        </div>
+        <div class="row align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                    aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active px-3">
+                            <a class="nav-link" href="/sobre.html">Sobre o Dona</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Cosméticos</a>
+                                <a class="dropdown-item" href="#">Alimentos e doces</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Serviços</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Importação de itens necessários ao Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
