@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dona</title>
+  <link rel="stylesheet" href="assets/css/stylepersonalizado.css"> <!-- CSS meu, personalizado -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+
+</head>
+<style>
+  .h5 {
+    font-size: 1rem !important;
+  }
+</style>
+
+<body>
+  <div style="overflow-x: hidden;">
+    <!-- Configuração do menu/navbar -->
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a style="font-size: 3rem; font-weight: 500;" class="navbar-brand px-3" href="/index.html">Dona</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+          aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active px-3">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/sobre.html">Sobre o Dona</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/vidas.html">Vidas mudadas</a>
+            </li>
+            <li class="nav-item active px-3">
+              <a class="nav-link" href="/categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item active px-3">
+              <a class="nav-link" href="/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- /Configuração do menu/navbar -->
+
+    <!-- Configuração do corpo da página -->
+    <div class="container-fluid fundo d-flex justify-content-center align-items-center">
+      <!-- Imagem -->
+      <div class="p-5 m-3 w-50">
+        <img class="img-fluid" style="width: 90%" src="/assets/img/contato.png"
+          alt="Foto de mulher sorrindo, ilustrativa.">
+        <p><small>Photo by <a
+              href="https://unsplash.com/@brookecagle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke
+              Cagle</a> on <a
+              href="https://unsplash.com/s/photos/woman-owner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </small></p>
+      </div>
+      <!-- /Imagem -->
+
+      <!-- Contato -->
+      <div class="container p-5 m-3 w-50">
+        <div class="">
+          <h5 style="font-size: 1.8rem;" class="py-2 display-4">Entre em contato com a Dona!</h5>
+        </div>
+        <form class="w-75 text-align-center">
+          <div class="form-group">
+            <label for="Nome" class="py-2 mt-2">Seu nome:</label> <br>
+            <input id="nome" class="form-control" placeholder="Chica da Silva">
+            <div id="txtNome"> </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="py-2 mt-2">Seu e-mail:</label> <br>
+            <input id="email" type="email" class="form-control" placeholder="seuemail@email.com"
+              onkeyup="validaEmail()">
+            <div id="txtEmail"> </div>
+          </div>
+          <div class="form-group">
+            <label for="mensagem" class="py-2 mt-2">Mensagem:</label><br>
+            <textarea id="mensagem" class="form-control" cols="70" rows="8"
+              placeholder="Escreva sua mensagem aqui."></textarea>
+            <div id="txtMsg"> </div>
+          </div>
+          <div>
+            <button onclick="enviaMensagem()" class="btn btn-light my-3">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <!-- /Contato -->
+
+    </div>
+    <!-- /Configuração do corpo da página -->
+
+    <!-- Rodapé -->
+    <footer class="bg-secondary px-5 pt-2 row">
+      <!-- Créditos página -->
+      <div class="col-4 ">
+        <small class="font-light" style="font-size: 1rem; color:#fff">Página por: <a class="branco"
+            href="https://www.linkedin.com/in/anaolisilva/">Ana Oliveira</a></small>
+      </div>
+      <div class="col-4 justify-content-center">
+        <!-- Redes sociais (links genéricos) -->
+        <div class="row justify-content-center pb-1 branco">
+          Siga a Dona nas redes sociais!
+        </div>
+        <div class="row justify-content-center p-2">
+          <a href="https://www.facebook.com/" class="col-1">
+            <img class="img-fluid" style="width:3.8rem;" src="/assets/img/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/" class="col-1">
+            <img class="img-fluid" style="width:3.8em;" src="/assets/img/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/" class="col-1">
+            <img class="img-fluid" style="width:3.8rem;" src="/assets/img/linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+
+        <p class="row justify-content-center text-align-center branco"><small class="font-italic"
+            style="font-size: 0.8rem; text-align: center;">
+            Ícones feitos por <a class="branco" href="https://www.freepik.com" title="Freepik">Freepik</a>
+            from
+            <a class="branco" href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+          </small></p>
+      </div>
+      <div class="col-4">
+        <!-- div enche linguiça pra dividir a página igualmente-->
+      </div>
+    </footer>
+    <!-- /Rodapé -->
+  </div>
+
+
+  <!-- Importação de itens necessários ao Bootstrap: JavaScrpt, JQuery e Popper -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <!-- Importação de script JS personalizado -->
+  <script src="/assets/js/scriptpersonalizado.js"></script>
+</body>
+
+</html>

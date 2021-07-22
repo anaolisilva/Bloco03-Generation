@@ -1,0 +1,27 @@
+.fundo {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background: linear-gradient(50deg, #78d2fc, #92f5df98, #96ff8c);
+    background-size: 300% 300%;
+    animation: colors 13s infinite;
+    overflow-x: hidden;
+}
+
+@keyframes colors {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.branco {
+    color: #fff !important;
+}
