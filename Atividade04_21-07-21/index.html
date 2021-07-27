@@ -21,6 +21,7 @@
     h1 {
         font-size: 9rem !important;
         font-weight: 700 !important;
+        color: rgba(255, 255, 255, 0) !important;
     }
 
     .subtitulo {
@@ -32,32 +33,59 @@
     .altura {
         height: 100px !important;
     }
+
+    .brilho {
+        box-shadow: 0 0px 40px 20px #fff
+    }
+
+    .txt-nav {
+        font-size: 1.3rem !important;
+    }
+
+
+    #logo {
+        background-image: url('/assets/img/DONA-logo.png');
+        background-repeat: no-repeat;
+        background-position: 2% ;
+    }
+
+    .navbar-nav li {
+        transition: ease-in-out 0.2s;
+    }
+    .navbar-nav li:hover {
+        background-color: rgba(255, 255, 255, 0.514);
+        border-bottom: 5px solid  rgba(241, 51, 168, 0.753);
+    }
+
+
 </style>
 
 <body>
     <!-- background size e overflow:hidden propriedade: stretch -->
-    <div class="container-fluid m-0 p-0"  style="overflow-x: hidden;">
+    <div class="container-fluid m-0 p-0" style="overflow-x: hidden;">
         <header class="d-flex m-0" style="width:100vw">
-            <div class="row w-100 align-items-end">
-                <div id="logo" class="col-3 m-0">
-                    <h1>Dona</h1>
+            <div class="row w-100 align-items-end" id="logo">
+                <div class="col-3 m-0">
                 </div>
                 <div class="col p-0 m-0 h-auto overflow-hidden">
                     <img class="img-fluid cover" src="./assets/img/cabecalho01.png">
                 </div>
             </div>
         </header>
-        <div class="fundo container-fluid">
+        <div class="row brilho"></div>
+        <div class="fundo container-fluid corpo ">
             <div class="container d-flex flex-column p-5">
                 <!-- Container do subtitulo-->
                 <div class="row p-5 m-5"></div> <!-- Pra dar mais folga pro subtitulo -->
-                <div class="row justify-content-start mt-5">
-                    <div class="col subtitulo px-5 pt-5">
+                <div class="row mt-5 ml-3">
+                    <div class="col-1"></div>
+                    <div class="col subtitulo px-5 pt-5 ">
                         Mulheres com pequenos
                     </div>
                 </div>
-                <div class="row justify-content-center align-self-center mb-5">
+                <div class="row mb-5">
                     <!-- align-self alinha o próprio elemento em relação ao elemento pai -->
+                    <div class="col-4"></div>
                     <div class="col subtitulo">
                         negócios mudam o mundo
                     </div>
@@ -66,8 +94,9 @@
 
             </div>
             <!-- Menu -->
-            <div class="flex-column container align-items-center">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="flex-column align-items-center">
+                <div class="w-75 mx-auto">
+                <nav class="navbar navbar-expand-lg navbar-light rounded txt-nav">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
                         aria-expanded="false" aria-label="Alterna navegação">
@@ -76,21 +105,22 @@
 
                     <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
                         <ul class="navbar-nav">
-                            <li class="nav-item active px-5">
+                            <li class="nav-item active px-4 py-2 mx-3">
                                 <a class="nav-link" href="/sobre.html">Sobre o Dona</a>
                             </li>
-                            <li class="nav-item px-5">
+                            <li class="nav-item px-4 py-2 mx-3 ">
                                 <a class="nav-link" href="./vidas.html">Vidas mudadas</a>
                             </li>
-                            <li class="nav-item active px-5">
+                            <li class="nav-item active px-4 py-2 mx-3">
                                 <a class="nav-link" href="/categorias.html">Categorias</a>
                             </li>
-                            <li class="nav-item active px-5">
+                            <li class="nav-item active px-4 py-2 mx-3">
                                 <a class="nav-link" href="#">Contato</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
+            </div>
             </div>
             <!-- /Menu -->
             <div class="row p-5 m-5"></div> <!-- Pra dar mais folga pro menu -->
